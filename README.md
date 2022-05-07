@@ -39,11 +39,11 @@ ufw enable
 
 
 ```
-git clone https://github.com/yasiryagi/monitor
-cd monitor 
-cp service/monitor_subquery.service /etc/systemd/system/monitor_subquery.service
-systemctl start monitor_subquery.service
-systemctl status monitor_subquery.service
+git clone https://github.com/yasiryagi/monitoring
+cd monitoring 
+cp service/monitoring.service /etc/systemd/system/monitoring.service
+systemctl start monitoring.service
+systemctl status monitoring.service
 docker ps
 docker-compose logs -f --tail 100
 ```
@@ -56,15 +56,15 @@ We will be using cloud grafana.
 
 Click on the detail button to get your details to be used in the Prometheus config
 
-![grafana](./monitoring/images/1.PNG)
+![grafana](./images/1.PNG)
 
 ## Get and install dashboard templates 
 
 
 Import the dashboards from [here](./monitoring/dashboard).
-![Docker host](./monitoring/images/2_1.PNG)
-![Docker Serivces](./monitoring/images/2_2.PNG)
-![Docker containers](./monitoring/images/2_3.PNG)
+![Docker host](./images/2_1.PNG)
+![Docker Serivces](./images/2_2.PNG)
+![Docker containers](./images/2_3.PNG)
 
 
 # Ref
