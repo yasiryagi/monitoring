@@ -1,0 +1,18 @@
+[Unit]
+Description="Subquery monitoring systemd service"
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=10
+User=root
+SyslogIdentifier=subquery
+SyslogFacility=local7
+KillSignal=SIGHUP
+WorkingDirectory=$HOME/monitoring
+ExecStart=/usr/local/bin/docker-compose up -d
+
+[Install]
+WantedBy=multi-user.target
