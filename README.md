@@ -47,6 +47,7 @@ systemctl status monitoring.service
 docker ps
 docker-compose logs -f --tail 100
 ```
+> Note: this guide created with the username root, if that is not the case review "WorkingDirectory=" in the service files.
 
 # Grafana 
 
