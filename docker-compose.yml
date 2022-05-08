@@ -52,6 +52,7 @@ services:
 #     org.label-schema.group: "monitoring"
   prometheus:
     image: prom/prometheus:latest
+    user: root
     command:
       - "--config.file=/etc/prometheus/prometheus.yml"
       - "--storage.tsdb.path=/prometheus"
@@ -60,7 +61,7 @@ services:
       - "--web.console.templates=/etc/prometheus/consoles"
     volumes:
         - ./prometheus:/etc/prometheus
-        - ./monitoring-data/prometheus:/prometheus
+        - ./monitoring-data:/prometheus
     ports:
       - "9090:9090"
     labels:
