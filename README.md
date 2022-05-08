@@ -34,7 +34,7 @@ ufw route allow proto tcp from any to any port 443
 ufw route allow proto tcp from any to any port 9090
 ufw enable 
 ```
-> Ass other system/ports that are needed.
+> Add other system/ports that are needed.
 
 # Run as a service
 
