@@ -11,7 +11,7 @@ User=root
 SyslogIdentifier=subquery
 SyslogFacility=local7
 KillSignal=SIGHUP
-WorkingDirectory=$HOME/monitoring
+WorkingDirectory=/root/monitoring
 ExecStart=/usr/local/bin/docker-compose up -d
 
 [Install]
