@@ -76,3 +76,8 @@ Import the dashboards from [here](./monitoring/dashboard).
 
 
 
+| weekday   |   temperature |   precipitation |
+|:----------|--------------:|----------------:|
+| monday    |            20 |             100 |
+| thursday  |            30 |             200 |
+| wednesday |            25 |             150 |
