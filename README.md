@@ -74,10 +74,3 @@ Import the dashboards from [here](./monitoring/dashboard).
 > https://grafana.com/docs/grafana-cloud/quickstart/docker-compose-linux/
 > https://github.com/stefanprodan/dockprom
 
-
-
-| weekday   |   temperature |   precipitation |
-|:----------|--------------:|----------------:|
-| monday    |            20 |             100 |
-| thursday  |            30 |             200 |
-| wednesday |            25 |             150 |
